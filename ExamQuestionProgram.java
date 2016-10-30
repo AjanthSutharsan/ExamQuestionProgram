@@ -27,6 +27,10 @@ public class ExamQuestionProgram
             String Guess1 = input.nextLine();
             String Guess1U = Guess1.toUpperCase();
             GuessU = Guess1U;
+            
+            if(GuessU.equals(Answer)) {
+                System.out.println("Well done. You have correctly guessed the six letter word.");
+            }
 
         } 
         while(!GuessU.equals(Answer));
